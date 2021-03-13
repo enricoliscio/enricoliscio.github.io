@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Enrico Liscio</title>
+    <title>Home</title>
     <link>https://enricoliscio.github.io/</link>
-    <description>Recent content on Enrico Liscio</description>
+    <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>None</copyright>
-    <lastBuildDate>Thu, 11 Mar 2021 21:22:43 +0100</lastBuildDate>
+    <language>en</language>
     
 	<atom:link href="https://enricoliscio.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>I can make web pages now</title>
+      <title>About Me</title>
       <link>https://enricoliscio.github.io/about/</link>
-      <pubDate>Thu, 11 Mar 2021 21:22:43 +0100</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://enricoliscio.github.io/about/</guid>
-      <description></description>
+      <description>Biography I am a PhD candidate in the Interactive Intelligence Group at TU Delft and part of the Hybrid Intelligence Centre. I obtained cum laude MSc. in Systems and Control from TU Delft (The Netherlands, 2017) and cum laude BSc. in Automation Engineering from the University of Bologna (Italy, 2015). Between my MSc. studies and the current position, I worked for 2.5 years as deep learning developer and technical project lead at Fizyr (the Netherlands).</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://enricoliscio.github.io/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://enricoliscio.github.io/publications/</guid>
+      <description>2021   Enrico Liscio, Michiel van der Meer, Luciano C. Siebert, Catholijn M. Jonker, Niek Mouter and Pradeep K. Murukannaiah. 2021. Axies: Identifying and Evaluating Context-Specific Values. In Proc. of the 20th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2021), Online, May 3–7, 2021, IFAAMAS, 10 pages.
+  Enrico Liscio, Michiel van der Meer, Catholijn M. Jonker and Pradeep K. Murukannaiah. 2021. A Collaborative Platform for Identifying Context-Specific Values: Demonstration Track.</description>
     </item>
     
   </channel>
