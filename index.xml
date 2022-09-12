@@ -5,18 +5,14 @@
     <link>https://enricoliscio.github.io/</link>
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://enricoliscio.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://enricoliscio.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
       <link>https://enricoliscio.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://enricoliscio.github.io/about/</guid>
-      <description>Biography I am a PhD candidate in the Interactive Intelligence Group at TU Delft and part of the Hybrid Intelligence Centre. I obtained cum laude MSc. in Systems and Control from TU Delft (The Netherlands, 2017) and cum laude BSc. in Automation Engineering from the University of Bologna (Italy, 2015). Between my MSc. studies and the current position, I worked for 2.5 years as deep learning developer and technical project lead at Fizyr (the Netherlands).</description>
+      <description>Biography    I am a PhD candidate in the Interactive Intelligence Group at TU Delft and part of the Hybrid Intelligence Centre. I obtained cum laude MSc. in Systems and Control from TU Delft (The Netherlands, 2017) and cum laude BSc. in Automation Engineering from the University of Bologna (Italy, 2015). Between my MSc. studies and the current position, I worked for 2.5 years as deep learning developer and technical project lead at Fizyr (the Netherlands).</description>
     </item>
     
     <item>
@@ -25,8 +21,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://enricoliscio.github.io/publications/</guid>
-      <description>2022   Enrico Liscio, Alin E. Dondera, Andrei Geadau, Catholijn M. Jonker, Pradeep K. Murukannaiah. 2022. Cross-Domain Classification of Moral Values. In Findings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL &amp;lsquo;22), 2727-2745. [Reproducibility Badge (top 3%)] [paper] [poster] [slide]
-  Enrico Liscio, Michiel van der Meer, Luciano C. Siebert, Catholijn M. Jonker, and Pradeep K. Murukannaiah. 2022. What Values should an Agent Align with?</description>
+      <description>2022      Enrico Liscio, Alin E. Dondera, Andrei Geadau, Catholijn M. Jonker, Pradeep K. Murukannaiah. 2022. Cross-Domain Classification of Moral Values. In Findings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL &amp;lsquo;22), 2727-2745. [Reproducibility Badge (top 3%)] [paper] [poster] [slide] [video]
+  Enrico Liscio, Michiel van der Meer, Luciano C. Siebert, Catholijn M. Jonker, and Pradeep K. Murukannaiah.</description>
     </item>
     
   </channel>
