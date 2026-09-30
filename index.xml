@@ -2,24 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home</title>
-    <link>https://enricoliscio.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://enricoliscio.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About Me</title>
-      <link>https://enricoliscio.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enricoliscio.github.io/about/</guid>
-      <description>Bio You can find my complete resume here. In short:&#xA;2024&amp;ndash;ongoing Postdoctoral researcher @ TU Delft (part of AlgoSoc and Hybrid Intelligence) 2020&amp;ndash;2024 Cum laude PhD @ TU Delft (part of Hybrid Intelligence) 2017&amp;ndash;2020 Deep learning developer and technical project lead at Fizyr 2015&amp;ndash;2017 Cum laude MSc. in Systems and Control (TU Delft) 2012&amp;ndash;2015 Cum laude BSc. in Automation Engineering (University of Bologna) PhD graduation I have recently successfully defended my PhD (cum laude)!</description>
-    </item>
-    <item>
-      <title>Publications</title>
-      <link>https://enricoliscio.github.io/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enricoliscio.github.io/publications/</guid>
-      <description>2026 A. Arzberger, E. Liscio, M.L. Lupetti, I. Martinez de Rituerto de Troya, and J. Yang. 2026. Co-Constructing Alignment: A Participatory Approach to Situating AI Values. In FAccT. [paper]&#xA;K.W. Guan, S. Goeschl, M. Amara, E. Liscio, M. Esherick, A. Kozlovski, J. Gonçalves, M. de Reuver, C. Figueroa. 2026. Operationalizing Governance for Youth-Facing LLM Well-being Support: A Community-Based Participatory Study. In FAccT. [paper]&#xA;U. Khurana, M. van der Meer, E.</description>
-    </item>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

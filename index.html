@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="en">
@@ -12,7 +12,7 @@
     
 
     <meta name="author" content="Enrico Liscio">
-    <meta name="description" content="Enrico Liscio&#39;s personal website">
+    <meta name="description" content="My research addresses how language models can align with human values, not as a static, one-off training objective, but as something that is context-dependent and shaped through interaction. During my PhD, I developed methods to identify value-relevant signals in text (value inference); as a postdoc, I studied how language models can generate outputs that reflect different value orientations (value expression). In parallel, I work on subjectivity in NLP, modeling variation in interpretation rather than reducing it to a single ground truth.">
     <meta name="keywords" content="blog,research,personal">
 
     <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Home"/>
@@ -21,14 +21,14 @@
     <meta property="og:title" content="Home" />
 <meta property="og:description" content="Enrico Liscio&#39;s personal website" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://enricoliscio.github.io/" />
+<meta property="og:url" content="http://localhost:1313/" />
 
 
 
     <title>Home</title>
 
     
-      <link rel="canonical" href="https://enricoliscio.github.io/">
+      <link rel="canonical" href="http://localhost:1313/">
     
 
     
@@ -38,7 +38,7 @@
     
       
       
-      <link rel="stylesheet" href="/css/coder.min.7845183269a9eb35f70d63bb7521ad5e9470a140d020e12172e0b5d3ed3ec9a3.css" integrity="sha256-eEUYMmmp6zX3DWO7dSGtXpRwoUDQIOEhcuC10&#43;0&#43;yaM=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="/css/coder.css" media="screen">
     
 
     
@@ -47,7 +47,7 @@
       
         
         
-        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
       
     
 
@@ -100,11 +100,15 @@
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
+              <a class="navigation-link" href="/#research">Research</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/publications/">Publications</a>
+              <a class="navigation-link" href="/#publications">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/#bio">Bio</a>
             </li>
           
         
@@ -117,72 +121,311 @@
 
       <div class="content">
         
-  <section class="container centered">
-  <div class="about">
-    
-      
-        <div class="avatar"><img src="/images/profile_photo.jpg" alt="avatar"></div>
-      
-    
-    
-    <h1>Enrico Liscio</h1>
-    <h2>Postdoctoral Researcher</h2>
-    
-    <ul>
-      
-        
-          <li>
-            <a href="https://github.com/enricoliscio/" aria-label="GitHub"   >
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="https://scholar.google.com/citations?user=g8X6yQkAAAAJ&amp;hl=en" aria-label="Google Scholar"   >
-              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="https://www.linkedin.com/in/enrico-liscio-aa7a64135/" aria-label="LinkedIn"   >
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="https://twitter.com/EnricoLiscio/" aria-label="Twitter"   >
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="https://www.youtube.com/channel/UCq2rayN873X8HnCRN9cdV5g" aria-label="Twitter"   >
-              <i class="fa fa-youtube" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="mailto:e.liscio@tudelft.nl" aria-label="Email"   >
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-    </ul>
-    
-  </div>
-</section>
+<style>
+  .op {
+    width: min(90rem, calc(100vw - 3rem));
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem; line-height: 1.55;
+  }
+  .op-head { display: flex; gap: 1.75rem; align-items: center; margin: 1rem 0 2.5rem; }
+  .op-head img { width: 15rem; height: 15rem; border-radius: 50%; object-fit: cover; flex: none; }
+  .op-head h1 { margin: 0 0 .25rem; }
+  .op-head h3 { margin: 0 0 .75rem; font-weight: 400; opacity: .75; }
+  .op-head ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .9rem; }
+  .op-head li a { font-size: 2rem; border: 0; }
+  .op-cv { display: inline-block; margin-top: .9rem; padding: .25rem .8rem; border: 1px solid currentColor; border-radius: .3rem; font-size: 1.2rem; }
+  .op section { margin-bottom: 2.75rem; scroll-margin-top: 1rem; }
+  .op section > h2 { border-bottom: 1px solid rgba(128,128,128,.35); padding-bottom: .3rem; }
+   
+  #pubs h2, #pubs summary { font-size: 1.8rem; margin: 1.5rem 0 .5rem; border: 0; padding: 0; }
+  #pubs summary { cursor: pointer; font-weight: 700; }
+  #pubs li { margin-bottom: .9rem; }
+  #pubs h1 { font-size: 1.15rem; margin-top: 2rem; }
+  #pubs ul { list-style: none; padding-left: 0; margin: 0; }
+  #pubs details h2 { display: inline; }
+  @media (max-width: 600px) {
+    .op-head { flex-direction: column; text-align: center; }
+    .op-head ul { justify-content: center; }
+  }
+</style>
 
+<div class="op">
+  <header class="op-head">
+    <img src="/images/profile_photo.jpg" alt="Enrico Liscio">
+    <div>
+      <h1>Enrico Liscio</h1>
+      <h3>Postdoctoral Researcher · TU&nbsp;Delft</h3>
+      <ul>
+        
+        <li><a href="https://github.com/enricoliscio/" title="GitHub" target="_blank" rel="noopener me"><i class="fa fa-github" aria-hidden="true"></i><span class="sr-only" style="position:absolute;left:-9999px">GitHub</span></a></li>
+        
+        <li><a href="https://scholar.google.com/citations?user=g8X6yQkAAAAJ&amp;hl=en" title="Google Scholar" target="_blank" rel="noopener me"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="sr-only" style="position:absolute;left:-9999px">Google Scholar</span></a></li>
+        
+        <li><a href="https://www.linkedin.com/in/enrico-liscio-aa7a64135/" title="LinkedIn" target="_blank" rel="noopener me"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only" style="position:absolute;left:-9999px">LinkedIn</span></a></li>
+        
+        <li><a href="https://twitter.com/EnricoLiscio/" title="Twitter" target="_blank" rel="noopener me"><i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only" style="position:absolute;left:-9999px">Twitter</span></a></li>
+        
+        <li><a href="https://www.youtube.com/channel/UCq2rayN873X8HnCRN9cdV5g" title="YouTube" target="_blank" rel="noopener me"><i class="fa fa-youtube" aria-hidden="true"></i><span class="sr-only" style="position:absolute;left:-9999px">YouTube</span></a></li>
+        
+        <li><a href="mailto:e.liscio@tudelft.nl" title="Email" target="_blank" rel="noopener me"><i class="fa fa-envelope" aria-hidden="true"></i><span class="sr-only" style="position:absolute;left:-9999px">Email</span></a></li>
+        
+      </ul>
+      <a class="op-cv" href="/resume.pdf">CV (PDF)</a>
+    </div>
+  </header>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p><strong>My research addresses how language models can align with human values</strong>, not as a static, one-off training objective, but as something that is context-dependent and shaped through interaction. During my PhD, I developed methods to identify value-relevant signals in text (<em><strong>value inference</strong></em>); as a postdoc, I studied how language models can generate outputs that reflect different value orientations (<em><strong>value expression</strong></em>). In parallel, I work on <strong>subjectivity in NLP</strong>, modeling variation in interpretation rather than reducing it to a single ground truth.</p>
+<p>I was recently awarded a <strong>Veni</strong>, a prestigious Dutch personal grant for early-career researchers. My project, <em><strong>Inference-Time Value Alignment in Multi-Turn Language Model Interaction</strong></em>, develops methods to infer user values from noisy, evolving signals during a conversation; to represent them in a form a language model can use; and to express them stably in generated language throughout a multi-turn exchange.</p>
+
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <div id="pubs">
+      <h2 id="2026">
+  2026
+  <a class="heading-link" href="#2026">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>
+<p>A. Arzberger, E. Liscio, M.L. Lupetti, I. Martinez de Rituerto de Troya, and J. Yang. 2026.
+<strong>Co-Constructing Alignment: A Participatory Approach to Situating AI Values</strong>.
+In <em>FAccT</em>. [<a href="https://dl.acm.org/doi/abs/10.1145/3805689.3812267">paper</a>]</p>
+</li>
+<li>
+<p>U. Khurana, M. van der Meer, E. Liscio, A. Fokkens, P.K. Murukannaiah. 2026.
+<strong>Not All Subjectivity Is the Same! Defining Desiderata for the Evaluation of Subjectivity in NLP</strong>.
+<em>EMNLP 2026 (Findings)</em>. [<a href="https://arxiv.org/pdf/2603.28351">pre-print</a>]</p>
+</li>
+<li>
+<p>P. Blum, E. Liscio, R. Zhang, C. Figueroa, P.K. Murukannaiah. 2026.
+<strong>Reading Between the Signs: Predicting Future Suicidal Ideation from Adolescent Social Media Texts</strong>.
+<em>NLP4PI @ EMNLP 2026</em>. [<a href="https://arxiv.org/pdf/2509.03530">pre-print</a>]</p>
+</li>
+<li>
+<p>R.A.C. Diaconescu, I. Slanina, A. Florea, A.B. Trache, M.E. Coroi, A. Arzberger, J. Yang, E. Liscio. 2026.
+<strong>Beyond a Global Norm: Personalizing Toxicity Sensitivity in Language Models Without Retraining</strong>.
+<em>WOAH @ EMNLP 2026</em>. [<a href="https://arxiv.org/pdf/2607.23175">pre-print</a>]</p>
+</li>
+<li>
+<p>K.W. Guan, S. Goeschl, M. Amara, E. Liscio, M. Esherick, A. Kozlovski, J. Gonçalves, M. de Reuver, C. Figueroa. 2026.
+<strong>Operationalizing Governance for Youth-Facing LLM Well-being Support: A Community-Based Participatory Study</strong>.
+In <em>FAccT</em>. [<a href="https://dl.acm.org/doi/abs/10.1145/3805689.3812325">paper</a>]</p>
+</li>
+</ul>
+<h2 id="2025">
+  2025
+  <a class="heading-link" href="#2025">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>
+<p>E. Liscio*, L.C. Siebert*, C.M. Jonker, P.K. Murukannaiah. 2025.
+<strong>Value Preferences Estimation and Disambiguation in Hybrid Participatory Systems</strong>.
+In <em>Journal of Artificial Intelligence Research (JAIR)</em>.
+[<a href="https://www.jair.org/index.php/jair/article/view/14958">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/ECAI_presentation.pdf">slides</a>]</p>
+</li>
+<li>
+<p>E. Liscio, M. Lorandi, P.K. Murukannaiah. 2025.
+<strong>News is More than a Collection of Facts: Moral Frame Preserving News Summarization</strong>.
+In <em>COLM 2025</em>.
+[<a href="https://openreview.net/pdf?id=uzauWUW9u3">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/COLM_poster.pdf">poster</a>]</p>
+</li>
+<li>
+<p>A. Homayounirad, E. Liscio, T. Wang, C.M. Jonker, L.C. Siebert. 2025.
+<strong>Will Annotators Disagree? Identifying Subjectivity in Value-Laden Arguments</strong>.
+In <em>EMNLP 2025 (Findings)</em>.
+[<a href="https://aclanthology.org/2025.findings-emnlp.824/">paper</a>]</p>
+</li>
+<li>
+<p>A. Kuber, E. Liscio, R. Zhang, C. Figueroa, P.K. Murukannaiah. 2025.
+<strong>Signs of Struggle: Spotting Cognitive Distortions across Language and Register</strong>.
+In <em>AACL 2025 (Findings)</em>.
+[<a href="https://aclanthology.org/2025.findings-ijcnlp.61/">paper</a>]</p>
+</li>
+<li>
+<p>A.N. Dobrinoiu, A.C. Marcu, A. Homayounirad, L.C. Siebert, E. Liscio. 2025.
+<strong>Taking a SEAT: Predicting Value Interpretations from Sentiment, Emotion, Argument, and Topic Annotations</strong>.
+In <em>VALE @ ECAI 2025.</em>
+[<a href="https://arxiv.org/pdf/2510.01976">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/VALE_presentation.pdf">slides</a>]
+[<a href="https://enricoliscio.github.io/publications/VALE_poster.pdf">poster</a>]</p>
+</li>
+</ul>
+<h2 id="2024">
+  2024
+  <a class="heading-link" href="#2024">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>
+<p>J. Park*, E. Liscio*, P.K. Murukannaiah. 2024.
+<strong>Morality is Non-Binary: Building a Pluralist Moral Sentence Embedding Space using Contrastive Learning</strong>.
+In <em>EACL 2024 (Findings)</em>.
+[<a href="https://aclanthology.org/2024.findings-eacl.45.pdf">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/Liscio_moral_embeddings_EACL_poster.pdf">poster</a>]
+[<a href="https://enricoliscio.github.io/publications/Liscio_moral_embeddings_EACL_presentation.pdf">slides</a>]
+[<a href="https://enricoliscio.github.io/publications/Morality_is_non_binary_abstract.pdf">extended abstract</a>]</p>
+</li>
+<li>
+<p>M. van der Meer, N. Falk, P.K. Murukannaiah, E. Liscio. 2024.
+<strong>Annotator-Centric Active Learning for Subjective NLP Tasks</strong>.
+In <em>EMNLP 2024</em>. [<a href="https://aclanthology.org/2024.emnlp-main.1031/">paper</a>]</p>
+</li>
+<li>
+<p>R.X. Lera-Leri, E. Liscio, F. Bistaffa, C.M. Jonker, M. Lopez-Sanchez, P.K. Murukannaiah, J.A. Rodriguez-Aguilar, F. Salas-Molina. 2024.
+<strong>Aggregating Value Systems for Decision Support</strong>.
+In <em>Knowledge-Based Systems</em>, 287, 111453.
+[<a href="https://www.sciencedirect.com/science/article/pii/S0950705124000881">paper</a>]</p>
+</li>
+<li>
+<p>M. van der Meer, E. Liscio, C.M. Jonker, A. Plaat, P. Vossen, P.K. Murukannaiah. 2024.
+<strong>A Hybrid Intelligence Method for Argument Mining</strong>.
+In <em>Journal of Artificial Intelligence Research (JAIR)</em>. [<a href="https://www.jair.org/index.php/jair/article/view/15135">paper</a>]</p>
+</li>
+</ul>
+<h2 id="2023">
+  2023
+  <a class="heading-link" href="#2023">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>
+<p>E. Liscio, O. Araque, L. Gatti, I. Constantinescu, C.M. Jonker, K. Kalimeri, P.K. Murukannaiah. 2023. <strong>What does a Text Classifier Learn about Morality? An Explainable Method for Cross-Domain Comparison of Moral Rhetoric</strong>.
+In <em>ACL 2023</em>.
+[<a href="https://aclanthology.org/2023.acl-long.789.pdf">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/explainable_morality_classification_poster.pdf">poster</a>]
+[<a href="https://enricoliscio.github.io/publications/explainable_morality_classification_slides.pdf">slides</a>]
+[<a href="https://bnaic2023.tudelft.nl/static/media/BNAICBENELEARN_2023_paper_29.6e3e33970df5a3d9592a.pdf">extended abstract</a>]</p>
+</li>
+<li>
+<p>E. Liscio, R. Lera-Leri, F. Bistaffa, R.I.J. Dobbe, C.M. Jonker, M. Lopez-Sanchez, J.A. Rodriguez-Aguilar, P.K. Murukannaiah. 2023. <strong>Value Inference in Sociotechnical Systems</strong>.
+In <em>AAMAS &lsquo;23 (position paper)</em>.
+[<a href="https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p1774.pdf">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/value_inference_poster.pdf">poster</a>]
+[<a href="https://enricoliscio.github.io/publications/value_inference_slides.pdf">slides</a>]
+[<a href="https://ebooks.iospress.nl/doi/10.3233/FAIA230102">extended abstract</a>]</p>
+</li>
+</ul>
+<h2 id="2022">
+  2022
+  <a class="heading-link" href="#2022">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>
+<p>E. Liscio, A.E. Dondera, A. Geadau, C.M. Jonker, P.K. Murukannaiah. 2022.
+<strong>Cross-Domain Classification of Moral Values</strong>.
+In <em>NAACL 2022 (Findings)</em>.
+[<strong>Reproducibility Badge (top 3%)</strong>]
+[<a href="https://aclanthology.org/2022.findings-naacl.209.pdf">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/Liscio_cross_domain_values_NAACL_poster.pdf">poster</a>]
+[<a href="https://enricoliscio.github.io/publications/Liscio_cross_domain_values_NAACL_slide.pdf">slide</a>]
+[<a href="https://underline.io/events/325/posters/11375/poster/54164-cross-domain-classification-of-moral-values">video</a>]</p>
+</li>
+<li>
+<p>E. Liscio, M. van der Meer, L.C. Siebert, C.M. Jonker, P.K. Murukannaiah. 2022.
+<strong>What Values should an Agent Align with? An Empirical Comparison of General and Context-Specific Values</strong>.
+In <em>Autonomous Agents and Multi-Agent Systems (JAAMAS)</em>.
+[<a href="https://link.springer.com/article/10.1007/s10458-022-09550-0">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/axies_poster.pdf">poster</a>]
+[<a href="https://ebooks.iospress.nl/volumearticle/60891">extended abstract</a>]
+[<a href="https://enricoliscio.github.io/publications/axies_extended_slide.pdf">slide</a>]</p>
+</li>
+<li>
+<p>E. Liscio, C.M. Jonker, P.K. Murukannaiah. 2022.
+<strong>Identifying Context-Specific Values via Hybrid Intelligence</strong>.
+In <em>HHAI2022 (poster track)</em>.
+[<strong>Best poster award</strong>]
+[<a href="https://ebooks.iospress.nl/volumearticle/60891">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/axies_poster.pdf">poster</a>]</p>
+</li>
+<li>
+<p>M. van der Meer, E. Liscio, C.M. Jonker, A. Plaat, P. Vossen, P.K. Murukannaiah. 2022.
+<strong>HyEnA: A Hybrid Method for Extracting Arguments from Opinions</strong>.
+In <em>HHAI2022</em>.
+[<strong>Best paper award</strong>]
+[<a href="https://ebooks.iospress.nl/volumearticle/60855">paper</a>]</p>
+</li>
+<li>
+<p>L.C. Siebert, E. Liscio, P.K. Murukannaiah, L. Kaptein, S. Spruit, J. van den Hoven, C.M. Jonker. 2022.
+<strong>Estimating Value Preferences in a Hybrid Participatory System</strong>.
+In <em>HHAI2022</em>.
+[<strong>Best paper award finalist</strong>]
+[<a href="https://ebooks.iospress.nl/volumearticle/60861">paper</a>]</p>
+</li>
+</ul>
+<h2 id="2021">
+  2021
+  <a class="heading-link" href="#2021">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>
+<p>E. Liscio, M. van der Meer, L.C. Siebert, C.M. Jonker, N. Mouter, P.K. Murukannaiah. 2021.
+<strong>Axies: Identifying and Evaluating Context-Specific Values</strong>.
+In <em>AAMAS 2021</em>.
+[<a href="http://www.ifaamas.org/Proceedings/aamas2021/pdfs/p799.pdf">paper</a>]
+[<a href="https://enricoliscio.github.io/publications/axies_poster.pdf">poster</a>]
+[<a href="https://enricoliscio.github.io/publications/axies_slide.pdf">slide</a>]
+[<a href="https://ebooks.iospress.nl/volumearticle/60891">extended abstract</a>]
+[<a href="https://slideslive.com/38954919/axies-identifying-and-evaluating-contextspecific-values">video</a>]</p>
+</li>
+<li>
+<p>E. Liscio, M. van der Meer, C.M. Jonker, P.K. Murukannaiah. 2021.
+<strong>A Collaborative Platform for Identifying Context-Specific Values</strong>.
+In <em>AAMAS 2021 (demo track)</em>.
+[<a href="http://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1773.pdf">paper</a>]
+[<a href="https://youtu.be/s7nJPr2Z80w">video</a>]</p>
+</li>
+</ul>
+
+    </div>
+  </section>
+
+  <section id="bio">
+    <h2>Bio</h2>
+    <ul>
+<li>2027&ndash;2029   Postdoctoral researcher @ VU Amsterdam (with NWO Veni Grant)</li>
+<li>2024&ndash;2026   Postdoctoral researcher @ TU Delft (part of <a href="https://algosoc.org/">AlgoSoc</a> and <a href="https://www.hybrid-intelligence-centre.nl/">Hybrid Intelligence</a>)</li>
+<li>2020&ndash;2024   Cum laude PhD @ TU Delft (part of <a href="https://www.hybrid-intelligence-centre.nl/">Hybrid Intelligence</a>)</li>
+<li>2017&ndash;2020   Deep learning developer and technical project lead at <a href="https://fizyr.com/">Fizyr</a></li>
+<li>2015&ndash;2017   Cum laude MSc. in Systems and Control (TU Delft)</li>
+<li>2012&ndash;2015   Cum laude BSc. in Automation Engineering (University of Bologna)</li>
+</ul>
+
+  </section>
+</div>
+
+<script>
+  
+  (function () {
+    var root = document.getElementById('pubs');
+    if (!root) return;
+    var years = Array.prototype.slice.call(root.querySelectorAll('h2')).slice(2);
+    years.forEach(function (h) {
+      var d = document.createElement('details');
+      var s = document.createElement('summary');
+      h.parentNode.insertBefore(d, h);
+      s.appendChild(h);
+      d.appendChild(s);
+      while (d.nextSibling && !/^H[12]$/.test(d.nextSibling.nodeName)) d.appendChild(d.nextSibling);
+    });
+  })();
+</script>
 
       </div>
 
@@ -214,7 +457,7 @@
     
       
         
-        <script src="/js/dark-mode.min.c2d8a1f8f2660e4a46d776277c72695a1e0ca65939d79f754441d47551604af5.js" integrity="sha256-wtih&#43;PJmDkpG13YnfHJpWh4Mplk51591REHUdVFgSvU="></script>
+        <script src="/js/dark-mode.js"></script>
       
     
 
